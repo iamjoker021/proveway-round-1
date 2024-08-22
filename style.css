@@ -91,6 +91,51 @@ input[type=radio] {
     margin-top: 0.5rem;
 }
 
+.card-expanded {
+    border: 1px solid var(--color-pink-shade);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.card-expanded p {
+    margin-bottom: 0.3rem;
+}
+
+.card-expanded .offer-highlight {
+    background-color: var(--color-pink-shade);
+    color: white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.1rem;
+    font-size: small;
+    height: 100%;
+}
+
+.card-expanded .strike-out {
+    color: rgb(165, 151, 151);
+    font-size: small;
+    text-decoration: line-through;
+}
+
+table {
+    text-align: left;
+}
+
+table th {
+    font-weight: 100;
+    font-size: smaller;
+}
+
+table select {
+    padding: 0.2rem;
+    width: 6rem;
+    border-color: rgb(221, 206, 206);
+    background-color: white;
+}
+
+th, td {
+    padding: 0.2rem;
+}
+
 /* Layout */
 html, body {
     height: 100%;
@@ -133,4 +178,19 @@ header, footer {
 .card > * {
     display: flex;
     align-items: center;
+}
+
+.card-expanded {
+    display: grid;
+    grid-template-columns: 0fr 3fr 1fr;
+}
+
+.card-expanded > div:nth-child(1) {
+    grid-column: 2 / 3;
+    padding: 0 1rem;
+}
+
+.card-expanded .flex-info {
+    display: flex;
+    gap: 1rem;
 }
