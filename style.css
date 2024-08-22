@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --color-pink-shade: #fc7d92;
+}
+
+/* Style */
+body {
+    background-color:beige;
+}
+
+body > div {
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+header > h1 {
+    font-size: x-large;
+    color: var(--color-pink-shade);
+}
+
+button {
+    background-color: var(--color-pink-shade);
+}
+
+footer {
+    color: gainsboro;
+    margin-top: 0.5rem;
+}
+
+footer span {
+    color: rgb(245, 44, 78);
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 0.3rem;
+    color: white;
+    border: 0;
+}
+
+button:active {
+    background-color: rgb(245, 44, 78);;
+}
+
+div.flex-space-btn {
+    margin: 1rem 0;
+}
+
+.card {
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 218, 218);
+}
+
+.card > * {
+    padding: 1rem 0.5rem;
+    height: 100%;
+}
+
+.card > div:nth-child(1) {
+    color: white;
+    font-weight: 600;
+    border-right: 1px dashed rgb(245, 44, 78);
+    background-color: var(--color-pink-shade);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+.card > div:nth-child(3) {
+    color: var(--color-pink-shade);
+    font-weight: bolder;
+}
+
+.flex-space-btn > p:nth-child(1) {
+    color: var(--color-pink-shade);
+    font-weight: 600;
+}
+
+input[type=radio] {
+    filter: hue-rotate(90deg);
+}
+
+.bold {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Layout */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    align-self: center;
+}
+
+.flex-space-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 0fr 3fr 1fr;
+    align-items: center;
+}
+
+.card  .flex-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.card > * {
+    display: flex;
+    align-items: center;
+}
